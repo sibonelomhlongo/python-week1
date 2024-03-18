@@ -32,3 +32,17 @@ except:
 
 myset= {1,2,3,1,3}
 print(myset)
+
+ #union and intersections
+
+odds={1,3,5,7,9}
+evens={0,2,4,6,8}
+primes={2,3,5,7}
+u =odds.union(evens)
+print(u)
+
+v = odds.intersection(primes) # only returns all numbers but not the ones in both
+print(v)
+
+h= evens.symmetric_difference(primes)
+print(h)
