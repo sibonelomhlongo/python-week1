@@ -24,9 +24,11 @@ try:
 except:
     print('KeyError')
 
-for key, value in mydict21.items:
-    print(key, value)
+'''for key, value in mydict21.items:
+    print(key, value)'''
 
 #sets
+# no duplicates , mutable
 
-   
+myset= {1,2,3,1,3}
+print(myset)
