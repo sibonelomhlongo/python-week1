@@ -46,3 +46,5 @@ print(v)
 
 h= evens.symmetric_difference(primes)
 print(h)
+print(primes.issubset(odds)) #returns true or false about condition
+
