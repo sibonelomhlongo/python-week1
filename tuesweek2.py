@@ -14,4 +14,5 @@ sentence2 = "sibonelo %s" % mystring
 print(sentence2)
 var2 = 4.9777732
 sentence3 = "sibonelo {} {}".format(mystring,var2)
-print(sentence3)
+sentence4 = f"sibonelo {mystring} {var2}"
+print(sentence4)
