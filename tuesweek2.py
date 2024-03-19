@@ -16,3 +16,22 @@ var2 = 4.9777732
 sentence3 = "sibonelo {} {}".format(mystring,var2)
 sentence4 = f"sibonelo {mystring} {var2}"
 print(sentence4)
+
+# collections
+
+from collections import Counter  # counter
+
+n = "wwwggjkggbjju"
+mycounter = Counter(n)
+print(mycounter) # return dictionary
+print(list(mycounter.elements()))
+
+from collections import namedtuple # namedtuple
+
+point = namedtuple("point", "x,y,z")
+pt = point(1,-3,5)
+print(pt)
+print(pt.x , pt.y , pt.z)
+
+from collections import OrderedDict # ordereddict
+
