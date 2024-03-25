@@ -71,6 +71,26 @@ gb_obj = groupby(gb, key=smaller_than_7)
 for key, value in gb_obj:
     print(key,list(value))
 
+gb_obj = groupby(gb, key= lambda x: x<7) # lambda as fuction 
+for key, value in gb_obj:
+    print(key,list(value))
 
+persons = [{"name":"sibo","age":25},{"name":"simo","age":25},
+           {"name":"noh","age":30},{"name":"lwazi","age":30}]
+per_obj = groupby(persons,key=lambda x:x["age"])
+for key, value in per_obj:
+    print(key,list(value))
 
+#infinite operators are COUNT,CYCLE AND REPEAT
+
+# LAMBDA FUNCTION  (lambda arguments:expresion)
+
+add10 = lambda x: x+10
+print(add10(4))
+multi = lambda x,y: x*y
+print(multi(3,4))
+
+pionts2d= [(1,2),(4,7),(7,1),(3,5)]
+points2d_sorted = sorted(pionts2d, key=lambda x: x[0]+ x[1])
+print(points2d_sorted)
 
