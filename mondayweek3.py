@@ -92,5 +92,5 @@ print(multi(3,4))
 
 pionts2d= [(1,2),(4,7),(7,1),(3,5)]
 points2d_sorted = sorted(pionts2d, key=lambda x: x[0]+ x[1])
-print(points2d_sorted)
+print(points2d_sorted) c
 
